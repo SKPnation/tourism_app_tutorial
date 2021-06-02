@@ -20,6 +20,7 @@ class SplashScreen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+
                       Text('Tx.',
                           style: TextStyle(
                               color: Color(0xffc40000),

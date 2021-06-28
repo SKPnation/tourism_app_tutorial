@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sli.tourism_app_tutorial">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
    <application
         android:label="tourism_app_tutorial"
         android:icon="@mipmap/ic_launcher">

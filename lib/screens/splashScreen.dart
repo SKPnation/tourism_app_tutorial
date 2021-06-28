@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tourism_app_tutorial/screens/onboarding.dart';
 import 'package:tourism_app_tutorial/utils/constants.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -28,11 +29,19 @@ class SplashScreen extends StatelessWidget {
                             fontSize: 30.0
                           ),
                         ),
-                        Text(
-                          'Skip',
-                          style: TextStyle(
-                              color: kPrimaryColor,
-                              fontSize: 20.0
+                        InkWell(
+                          onTap: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context)=> OnBoarding())
+                            );
+                          },
+                          child: Text(
+                            'Skip',
+                            style: TextStyle(
+                                color: kPrimaryColor,
+                                fontSize: 20.0
+                            ),
                           ),
                         )
                       ],
